@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3399ff;
+    --black: #111;
+    --sidenav-width: 250px;
+}
+
+#main {
+    /* If you want a transition effect */
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#main img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--black);
+    color: white;
+    padding: 16px 8px;
+}
+
+.sidenav {
+    /* display: none; */
+    /* width: var(--sidenav-width); */
+    width: 0;
+    background-color: var(--black);
+    position: fixed;
+    /* padding-top: 150px; */
+    overflow-x: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: medium;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.menu-items {
+    margin-top: 150px;
+}
+
+.dev-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.opennav {
+    cursor: pointer;
+}
+
+.closenav {
+    cursor: pointer;
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    right: 25px;
+}
+
+.reviews ul {
+    list-style-type: none;
+}
+
+.portfolio {
+    list-style-type: none;
+}
