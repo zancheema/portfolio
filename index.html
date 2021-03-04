@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+        <div href="javascript:void(0)" class="opennav" onclick="openNav()">&#9776; Open</div>
+    </div>
+    <div id="sidenav" class="sidenav">
+        <div class="closenav" id="closenav" onclick="closeNav()">x</div>
+        <div class="menu-items">
+            <a href="#">
+                <img src="./assets/dev-pic.jpg" alt="Developer's Photo" class="dev-img">
+            </a>
+            <a href="#about">About</a>
+            <a href="#skillsets">Skill Sets</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#liveapps">Live Apps</a>
+            <a href="#portfolio">PortFolio</a>
+        </div>
+    </div>
+    <div id="main">
+        <section id="about">
+            <h1>Zain Amjad</h1>
+            <h3>About</h3>
+            <p>
+                Hello! I'm Zain, an Android Developer and computer science graduate.
+            </p>
+            <p>
+                Software development has always been my passion. programming a piece
+                of code possessing a superpower, with which you can literally turn
+                ideas into reality. But more importantly, it is that this reality
+                can survive real world challenges and grow further.
+            </p>
+            <p>
+                If you want reliable, scalable and maintainable apps that help
+                you achieve your business goals, you are at the right place, where I
+                build these apps by actively testing them against day to day challenges
+                and edge cases that they may face, making sure that I provide you with
+                robust apps that do withstand these circumstances, when they do actually
+                arise.
+            </p>
+        </section>
+        <section id="skillsets" class="skillsets">
+            <h1>Skill Sets</h1>
+            <h3>What I am offering:</h2>
+                <ul class="skillsets-list">
+                    <li>Android API's i.e., Camera, Gallery, Location</li>
+                    <li>Push Notifications</li>
+                    <li>Local Storage (SQLite)</li>
+                    <li>Networking</li>
+                    <li>Retrofit Server Integration</li>
+                    <li>Firebase</li>
+                    <li>Google Maps</li>
+                    <li>User Account Login options i.e., Facebook, Google etc.</li>
+                    <li>Add Network Integration</li>
+                </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <h1>Reviews</h1>
+            <ul>
+                <li>
+                    <div class="review-item-container">
+                        <img src="./assets/review-1.PNG" alt="">
+                    </div>
+                </li>
+            </ul>
+        <section id="liveapps">
+            <h1>Live Apps</h1>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h1>Portfolio</h1>
+            <ul>
+                <li>
+                    <h3>Anonymous Chat</h3>
+                    <div class="portfolio-item-container">
+                        <img src="./assets/portfolio-anonymous.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        const navbar = document.getElementById("navbar");
+
+        function openNav() {
+            sidenav.style.width = "250px";
+        }
+        function closeNav() {
+            sidenav.style.width = "0";
+        }
+    </script>
+</body>
+</html>
