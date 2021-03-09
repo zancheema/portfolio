@@ -89,3 +89,17 @@ h1 {
 .portfolio {
     list-style-type: none;
 }
+
+/** configuration for bigger screes */
+@media screen and (min-width: 800px) {
+    #main {
+        margin-left: 250px;
+        padding: 20px;
+    }
+    .sidenav {
+        width: 250px;
+    }
+    .navbar, .closenav {
+        display: none
+    }
+}
